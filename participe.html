@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participe - PT Itupeva</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .form-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .form-header h1 {
+            color: #cc0000;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .form-header p {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .form-container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .form-group label .required {
+            color: #cc0000;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #cc0000;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .submit-btn {
+            background-color: #cc0000;
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #990000;
+        }
+
+        .info-box {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 4px;
+        }
+
+        .info-box p {
+            margin: 0;
+            color: #856404;
+        }
+
+        @media (max-width: 600px) {
+            .form-container {
+                padding: 20px;
+            }
+
+            .form-header h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-header">
+            <h1>🌟 Junte-se ao PT Itupeva</h1>
+            <p>Faça parte da construção de uma Itupeva mais justa e igualitária</p>
+        </div>
+
+        <div class="form-container">
+            <div class="info-box">
+                <p><strong>Como funciona:</strong> Preencha este formulário de pré-filiação e nossa executiva municipal entrará em contato com você em até 48h para te acolher e orientar sobre os próximos passos.</p>
+            </div>
+
+            <!-- FORMULÁRIO NETLIFY -->
+            <form name="pre-filiacao" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                
+                <!-- Campo obrigatório para Netlify Forms -->
+                <input type="hidden" name="form-name" value="pre-filiacao" />
+                
+                <!-- Campo honeypot para evitar spam (não visível para usuários) -->
+                <p style="display: none;">
+                    <label>Não preencha isso se você é humano: <input name="bot-field" /></label>
+                </p>
+
+                <div class="form-group">
+                    <label for="nome">Nome Completo <span class="required">*</span></label>
+                    <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+                </div>
+
+                <div class="form-group">
+                    <label for="whatsapp">WhatsApp (com DDD) <span class="required">*</span></label>
+                    <input type="tel" id="whatsapp" name="whatsapp" required placeholder="(19) 99999-9999" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}">
+                </div>
+
+                <div class="form-group">
+                    <label for="bairro">Bairro/Região em Itupeva <span class="required">*</span></label>
+                    <input type="text" id="bairro" name="bairro" required placeholder="Ex: Centro, Vila Nova, etc.">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail <span style="color: #999; font-weight: normal;">(opcional)</span></label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="motivacao">O que te motiva a se filiar ao PT? <span class="required">*</span></label>
+                    <textarea id="motivacao" name="motivacao" required placeholder="Conte-nos brevemente o que te inspira a fazer parte do partido..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="como-conheceu">Como conheceu o PT de Itupeva? <span class="required">*</span></label>
+                    <select id="como-conheceu" name="como-conheceu" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="redes-sociais">Redes Sociais</option>
+                        <option value="amigo-familiar">Amigo/Familiar</option>
+                        <option value="acao-rua">Ação na rua/panfletagem</option>
+                        <option value="evento">Evento/Reunião</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="submit-btn">Enviar Pré-Filiação</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
