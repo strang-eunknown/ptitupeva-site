@@ -1,35 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    {
-  "name": "PT Itupeva - Diretório Municipal",
-  "short_name": "PT Itupeva",
-  "icons": [
-    {
-      "src": "/favicon-16x16.png",
-      "sizes": "16x16",
-      "type": "image/png"
-    },
-    {
-      "src": "/favicon-32x32.png",
-      "sizes": "32x32",
-      "type": "image/png"
-    },
-    {
-      "src": "/apple-touch-icon.png",
-      "sizes": "180x180",
-      "type": "image/png"
-    }
-  ],
-  "theme_color": "#C8102E",
-  "background_color": "#EDEAE2",
-  "display": "standalone"
-}
-    <link rel="icon" type="image/x-icon" href="/public/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#C8102E">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PT Itupeva - Diretório Municipal</title>
@@ -297,7 +274,7 @@
       @media (max-width: 480px) {
           .card { padding: 26px 20px; }
           .container { padding: 50px 5%; }
-      }
+       }
     </style>
 </head>
 <body>
@@ -328,7 +305,7 @@
 
     <div class="torn">
         <svg viewBox="0 0 1200 30" preserveAspectRatio="none">
-            <path d="M0,30 L0,10 L40,18 L80,6 L120,20 L160,4 L200,16 L240,8 L280,22 L320,10 L360,18 L400,2 L440,14 L480,20 L520,8 L560,16 L600,4 L640,12 L680,24 L720,6 L760,18 L800,8 L840,22 L880,10 L920,16 L960,4 L1000,20 L1040,6 L1080,14 L1120,26 L1160,10 L1200,18 L1200,30 Z" fill="#EDEAE2"/>
+            <path d="M0,30 L0,10 L40,18 L80,6 L120,20 L160,4 L200,16 L240,8 L280,22 L320,10 L360,18 L400,2 L440,14 L480,20 L520,8 L560,16 L600,4 L640,12 L680,24 L720,6 L760,18 L800,8 L840,22 L880,10 L[...]
         </svg>
     </div>
 
@@ -374,17 +351,17 @@
 
                         <div style="margin-bottom: 25px;">
                             <label for="nome" style="display: block; margin-bottom: 8px; font-weight: 600;">Nome Completo <span style="color: red;">*</span></label>
-                            <input type="text" id="nome" name="nome" required placeholder="Seu nome completo" style="width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 4px; font-size: 1rem;">
+                            <input type="text" id="nome" name="nome" required placeholder="Seu nome completo" style="width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 4px; font-size: [...]
                         </div>
 
                         <div style="margin-bottom: 25px;">
                             <label for="whatsapp" style="display: block; margin-bottom: 8px; font-weight: 600;">WhatsApp (com DDD) <span style="color: red;">*</span></label>
-                            <input type="tel" id="whatsapp" name="whatsapp" required placeholder="(11) 99215-9485" style="width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 4px; font-size: 1rem;">
+                            <input type="tel" id="whatsapp" name="whatsapp" required placeholder="(11) 99215-9485" style="width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 4px; font-s[...]
                         </div>
 
                         <div style="margin-bottom: 25px;">
                             <label for="bairro" style="display: block; margin-bottom: 8px; font-weight: 600;">Bairro/Região em Itupeva <span style="color: red;">*</span></label>
-                            <input type="text" id="bairro" name="bairro" required placeholder="Ex: Centro, Vila Nova" style="width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 4px; font-size: 1rem;">
+                            <input type="text" id="bairro" name="bairro" required placeholder="Ex: Centro, Vila Nova" style="width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 4px; fon[...]
                         </div>
 
                         <div style="margin-bottom: 25px;">
@@ -394,12 +371,12 @@
 
                         <div style="margin-bottom: 25px;">
                             <label for="motivacao" style="display: block; margin-bottom: 8px; font-weight: 600;">O que te motiva a se filiar? <span style="color: red;">*</span></label>
-                            <textarea id="motivacao" name="motivacao" required placeholder="Conte-nos brevemente..." style="width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 4px; font-size: 1rem; min-height: 80px;"></textarea>
+                            <textarea id="motivacao" name="motivacao" required placeholder="Conte-nos brevemente..." style="width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 4px; font[...]
                         </div>
 
                         <div style="margin-bottom: 25px;">
                             <label for="como-conheceu" style="display: block; margin-bottom: 8px; font-weight: 600;">Como conheceu o PT de Itupeva? <span style="color: red;">*</span></label>
-                            <select id="como-conheceu" name="como-conheceu" required style="width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 4px; font-size: 1rem; background: white;">
+                            <select id="como-conheceu" name="como-conheceu" required style="width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 4px; font-size: 1rem; background: white;"[...]
                                 <option value="">Selecione uma opção</option>
                                 <option value="redes-sociais">Redes Sociais</option>
                                 <option value="amigo-familiar">Amigo/Familiar</option>
@@ -409,14 +386,14 @@
                             </select>
                         </div>
 
-                        <button type="submit" style="background-color: #cc0000; color: white; padding: 15px; border: none; border-radius: 4px; font-size: 1.1rem; font-weight: 600; width: 100%; cursor: pointer; transition: background 0.2s;">
+                        <button type="submit" style="background-color: #cc0000; color: white; padding: 15px; border: none; border-radius: 4px; font-size: 1.1rem; font-weight: 600; width: 100%; cursor:[...]
                             Enviar Pré-Filiação
                         </button>
                     </form>
 
                     <div style="margin-top: 30px; text-align: center; padding-top: 30px; border-top: 1px solid #ddd;">
                         <p style="color: #666; margin-bottom: 15px;">Já é filiado? Acesse o site oficial:</p>
-                        <a href="https://pt.org.br/filie-se/" target="_blank" style="display: inline-block; background-color: #cc0000; color: white; padding: 12px 30px; border-radius: 4px; text-decoration: none; font-weight: 600; transition: background 0.2s;">
+                        <a href="https://pt.org.br/filie-se/" target="_blank" style="display: inline-block; background-color: #cc0000; color: white; padding: 12px 30px; border-radius: 4px; text-decora[...]
                             Filiação Oficial PT
                         </a>
                     </div>
